@@ -1,0 +1,170 @@
+/* Estilos específicos para la página de testimonios */
+:root {
+    --primary-color: #1a7db7;
+    --secondary-color: #0d4a6d;
+    --accent-color: #38b6ff;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --success-color: #28a745;
+}
+
+/* Hero Section Testimonios */
+.testimonials-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+    height: 60vh;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    margin-top: 76px;
+}
+
+/* Estadísticas */
+.fa-smile, .fa-star, .fa-comments, .fa-award {
+    color: var(--primary-color);
+}
+
+/* Filtro de testimonios */
+.filter-buttons .btn {
+    border-radius: 25px;
+    padding: 8px 20px;
+    transition: all 0.3s ease;
+}
+
+.filter-buttons .btn:hover,
+.filter-buttons .btn.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* Cards de testimonios */
+.testimonial-card {
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.testimonial-text {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.rating {
+    color: #FFD700; /* Color dorado para estrellas */
+}
+
+.rating .fas.fa-star-half-alt {
+    position: relative;
+}
+
+.rating .fas.fa-star-half-alt:before {
+    content: '\f089'; /* Unicode for half star */
+}
+
+.testimonial-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+/* Sistema de calificación */
+.rating-input {
+    text-align: center;
+}
+
+.rating-input .stars {
+    font-size: 2rem;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.rating-input .stars i {
+    padding: 0 3px;
+    transition: all 0.2s ease;
+}
+
+.rating-input .stars i:hover,
+.rating-input .stars i.active {
+    color: #FFD700;
+    transform: scale(1.2);
+}
+
+/* Formulario */
+#testimonialForm {
+    background: white;
+    border-radius: 15px;
+}
+
+/* Accordion FAQ */
+.accordion-button:not(.collapsed) {
+    background-color: rgba(26, 125, 183, 0.1);
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(26, 125, 183, 0.25);
+    border-color: var(--primary-color);
+}
+
+/* Animaciones */
+[data-aos] {
+    transition: all 0.8s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .testimonials-hero {
+        height: 50vh;
+        min-height: 300px;
+    }
+    
+    .testimonials-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .filter-buttons .btn {
+        margin: 5px;
+        padding: 6px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .testimonial-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .rating-input .stars {
+        font-size: 1.5rem;
+    }
+}
+
+/* Efectos de hover para grid items */
+.grid-item {
+    transition: all 0.3s ease;
+}
+
+.grid-item.hide {
+    opacity: 0;
+    transform: scale(0.9);
+    height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.grid-item.show {
+    opacity: 1;
+    transform: scale(1);
+    height: auto;
+}

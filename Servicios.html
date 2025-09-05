@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Servicios Dentales - DentalSmile</title>
+    <meta
+        content="Descubre todos nuestros servicios dentales: implantes, ortodoncia, estética dental, endodoncia y más. Tecnología de vanguardia para tu salud bucal."
+        name="description" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;family=Open+Sans:wght@300;400;500&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <link href="Servicios.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html#inicio">
+                <i class="fas fa-tooth me-2"></i>Dental<span class="brand-highlight">Smile</span>
+            </a>
+            <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">Equipo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Testimonios.html">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                </ul>
+                <button class="btn btn-primary ms-lg-3 custom-btn" id="reservaBtn">
+                    <i class="fas fa-calendar-check me-2"></i>Reserva Ahora
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section Servicios -->
+    <header class="services-hero">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold text-white mb-4" data-aos="fade-down">Nuestros Servicios Dentales</h1>
+                    <p class="lead text-white mb-4" data-aos="fade-down" data-aos-delay="200">Descubre todos los
+                        tratamientos que ofrecemos para cuidar tu salud bucal y transformar tu sonrisa</p>
+                    <a class="btn btn-primary btn-lg custom-btn mt-3" data-aos="fade-up" data-aos-delay="400"
+                        href="#services-grid">
+                        <i class="fas fa-arrow-down me-2"></i>Ver Servicios
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Introducción Servicios -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <h2 class="fw-bold mb-4 section-title">Cuidado integral para tu sonrisa</h2>
+                    <p class="lead">En DentalSmile nos especializamos en proporcionar tratamientos dentales completos
+                        con los más altos estándares de calidad.</p>
+                    <p>Nuestro equipo de especialistas cuenta con formación en las últimas técnicas y tecnologías para
+                        garantizar que recibas el mejor cuidado posible. Desde procedimientos preventivos hasta
+                        tratamientos reconstructivos avanzados, nos preocupamos por cada aspecto de tu salud bucal.</p>
+                    <div class="d-flex mt-4">
+                        <div class="me-4">
+                            <i class="fas fa-check-circle fa-2x text-primary"></i>
+                        </div>
+                        <div>
+                            <h4 class="h5">Atención personalizada</h4>
+                            <p class="text-muted mb-0">Cada tratamiento se adapta a tus necesidades específicas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="ratio ratio-16x9">
+                        <video class="service-video" controls=""
+                            poster="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80">
+                            <source src="Recursos/Conoce nuestras instalaciones.mp4" type="video/mp4" />
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                        
+                    </div>
+                    <p class="text-center text-muted mt-2">Conoce nuestras instalaciones y tecnología</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Grid de Servicios -->
+    <section class="py-5 bg-light" id="services-grid">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="fw-bold section-title">Nuestros Tratamientos</h2>
+                    <p class="text-muted">Explora todos los servicios que ofrecemos para cuidar de tu salud dental</p>
+                </div>
+            </div>
+            <!-- Filtro de Servicios -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap justify-content-center filter-buttons">
+                        <button class="btn btn-outline-primary mx-2 mb-2 active" data-filter="all">Todos</button>
+                        <button class="btn btn-outline-primary mx-2 mb-2" data-filter="preventivo">Preventivos</button>
+                        <button class="btn btn-outline-primary mx-2 mb-2" data-filter="estetica">Estética</button>
+                        <button class="btn btn-outline-primary mx-2 mb-2" data-filter="correctivo">Correctivos</button>
+                        <button class="btn btn-outline-primary mx-2 mb-2"
+                            data-filter="especializado">Especializados</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row grid-container">
+                <!-- Odontología General -->
+                <div class="col-md-6 col-lg-4 grid-item" data-category="preventivo">
+                    <div class="card service-grid-card h-100 border-0 shadow" data-aos="fade-up">
+                        <div class="card-img-wrapper">
+                            <img alt="Odontología general" class="card-img-top" loading="lazy"
+                                src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80" />
+                            <div class="card-overlay">
+                                <a class="btn btn-primary" href="#">Más información</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-wrapper-sm">
+                                    <i class="fas fa-tooth"></i>
+                                </div>
+                                <h3 class="h5 fw-bold mb-0 ms-3">Odontología General</h3>
+                            </div>
+                            <p class="text-muted">Revisiones periódicas, limpiezas profesionales, obturaciones y
+                                tratamientos preventivos para mantener tu salud bucal.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>Limpieza dental
+                                    profesional</li>
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>Obturaciones (empastes)
+                                </li>
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>Revisiones y diagnósticos
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a class="btn btn-outline-primary w-100" href="#">Saber más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ortodoncia -->
+                <div class="col-md-6 col-lg-4 grid-item" data-category="correctivo">
+                    <div class="card service-grid-card h-100 border-0 shadow" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-img-wrapper">
+                            <img alt="Ortodoncia" class="card-img-top" loading="lazy"
+                                src="Recursos/paciente-varon-con-ataguia-en-la-boca-mostrando-los-dientes-con-aparatos-ortopedicos.jpg" />
+                            <div class="card-overlay">
+                                <a class="btn btn-primary" href="#">Más información</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-wrapper-sm">
+                                    <i class="fas fa-teeth"></i>
+                                </div>
+                                <h3 class="h5 fw-bold mb-0 ms-3">Ortodoncia</h3>
+                            </div>
+                            <p class="text-muted">Brackets metálicos, estéticos y alineadores invisibles. Corregimos la
+                                posición dental en niños y adultos.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>Brackets metálicos</li>
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>Brackets estéticos</li>
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>Invisalign®</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a class="btn btn-outline-primary w-100" href="#">Saber más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Implantes Dentales -->
+                <div class="col-md-6 col-lg-4 grid-item" data-category="correctivo">
+                    <div class="card service-grid-card h-100 border-0 shadow" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-img-wrapper">
+                            <img alt="Implantes dentales" class="card-img-top" loading="lazy"
+                                src="Recursos/dentista-blanqueando-los-dientes.jpg" />
+                            <div class="card-overlay">
+                                <a class="btn btn-primary" href="#">Más información</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-wrapper-sm">
+                                    <i class="fas fa-implant"></i>
+                                </div>
+                                <h3 class="h5 fw-bold mb-0 ms-3">Implantes Dentales</h3>
+                            </div>
+                            <p class="text-muted">Reemplazamos dientes perdidos con implantes de titanio de última
+                                generación y prótesis fijas o removibles.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>Implantes unitarios</li>
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>Prótesis sobre implantes
+                                </li>
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>All-on-4®/All-on-6®</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a class="btn btn-outline-primary w-100" href="#">Saber más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Estética Dental -->
+                <div class="col-md-6 col-lg-4 grid-item" data-category="estetica">
+                    <div class="card service-grid-card h-100 border-0 shadow" data-aos="fade-up">
+                        <div class="card-img-wrapper">
+                            <img alt="Estética dental" class="card-img-top" loading="lazy"
+                                src="https://images.unsplash.com/photo-1530497610245-94d3c16cda28?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80" />
+                            <div class="card-overlay">
+                                <a class="btn btn-primary" href="#">Más información</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-wrapper-sm">
+                                    <i class="fas fa-smile"></i>
+                                </div>
+                                <h3 class="h5 fw-bold mb-0 ms-3">Estética Dental</h3>
+                            </div>
+                            <p class="text-muted">Blanqueamiento, carillas de porcelana, coronas zirconio y diseños de
+                                sonrisa para una apariencia natural y radiante.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>Carillas de porcelana
+                                </li>
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>Blanqueamiento dental
+                                </li>
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>Coronas estéticas</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a class="btn btn-outline-primary w-100" href="#">Saber más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Odontopediatría -->
+                <div class="col-md-6 col-lg-4 grid-item" data-category="preventivo">
+                    <div class="card service-grid-card h-100 border-0 shadow" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-img-wrapper">
+                            <img alt="Odontopediatría" class="card-img-top" loading="lazy"
+                                src="Recursos/nina-hermosa-en-el-dentista-sonriendo.jpg" />
+                            <div class="card-overlay">
+                                <a class="btn btn-primary" href="#">Más información</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-wrapper-sm">
+                                    <i class="fas fa-baby"></i>
+                                </div>
+                                <h3 class="h5 fw-bold mb-0 ms-3">Odontopediatría</h3>
+                            </div>
+                            <p class="text-muted">Cuidado dental especializado para niños, con enfoque preventivo y
+                                tratamientos adaptados a los más pequeños.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>Primera visita infantil
+                                </li>
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>Tratamientos preventivos
+                                </li>
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>Ortodoncia infantil</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a class="btn btn-outline-primary w-100" href="#">Saber más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Periodoncia -->
+                <div class="col-md-6 col-lg-4 grid-item" data-category="especializado">
+                    <div class="card service-grid-card h-100 border-0 shadow" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-img-wrapper">
+                            <img alt="Periodoncia" class="card-img-top" loading="lazy"
+                                src="Recursos/el-dentista-examina-los-dientes-del-paciente.jpg" />
+                            <div class="card-overlay">
+                                <a class="btn btn-primary" href="#">Más información</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-wrapper-sm">
+                                    <i class="fas fa-teeth-open"></i>
+                                </div>
+                                <h3 class="h5 fw-bold mb-0 ms-3">Periodoncia</h3>
+                            </div>
+                            <p class="text-muted">Tratamiento de las enfermedades de las encías como gingivitis y
+                                periodontitis para preservar tu salud bucal.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>Limpieza profunda</li>
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>Curetajes y raspados</li>
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>Cirugía periodontal</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a class="btn btn-outline-primary w-100" href="#">Saber más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Proceso de Atención -->
+    <section class="py-5 process-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="fw-bold section-title">Nuestro Proceso de Atención</h2>
+                    <p class="text-muted">Te acompañamos en cada paso de tu tratamiento dental</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="text-center">
+                        <div class="process-step mb-3">1</div>
+                        <h4 class="h5 fw-bold">Evaluación Inicial</h4>
+                        <p class="text-muted">Realizamos un diagnóstico completo con tecnología avanzada para planificar
+                            tu tratamiento.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-center">
+                        <div class="process-step mb-3">2</div>
+                        <h4 class="h5 fw-bold">Plan Personalizado</h4>
+                        <p class="text-muted">Creamos un plan de tratamiento adaptado a tus necesidades y expectativas.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-center">
+                        <div class="process-step mb-3">3</div>
+                        <h4 class="h5 fw-bold">Tratamiento</h4>
+                        <p class="text-muted">Aplicamos los procedimientos con las técnicas más avanzadas y mínimamente
+                            invasivas.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-center">
+                        <div class="process-step mb-3">4</div>
+                        <h4 class="h5 fw-bold">Seguimiento</h4>
+                        <p class="text-muted">Realizamos controles periódicos para garantizar el éxito a largo plazo de
+                            tu tratamiento.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Llamada a la acción -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-3">¿Necesitas asesoramiento especializado?</h2>
+                    <p class="lead mb-4">Nuestros especialistas están listos para evaluar tu caso y recomendarte el
+                        mejor tratamiento.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <button class="btn btn-light btn-lg custom-btn" id="ctaReservaBtn">
+                        <i class="fas fa-calendar-alt me-2"></i>Pedir cita
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Mejorado -->
+    <footer class="bg-dark text-white pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">Dental<span class="brand-highlight">Smile</span></h5>
+                    <p class="mb-4">Tu clínica dental de confianza con más de 12 años de experiencia cuidando sonrisas y
+                        mejorando la salud bucodental de nuestros pacientes.</p>
+                    <div class="d-flex gap-3 mb-4">
+                        <a class="text-white social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="text-white social-icon" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="text-white social-icon" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="text-white social-icon" href="#"><i class="fab fa-youtube"></i></a>
+                        <a class="text-white social-icon" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Enlaces rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a class="text-white text-decoration-none" href="index.html">Inicio</a></li>
+                        <li class="mb-2"><a class="text-white text-decoration-none" href="Servicios.html">Servicios</a>
+                        </li>
+                        <li class="mb-2"><a class="text-white text-decoration-none"href="Testimonios.html">Testimonios</a></li>
+                        <li class="mb-2"><a class="text-white text-decoration-none" href="team.html">Nuestro equipo</a>
+                        </li>
+                        <li class="mb-2"><a class="text-white text-decoration-none" href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Horario de atención</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Lunes a Viernes: 9:00 - 19:00</li>
+                        <li class="mb-2">Sábados: 9:00 - 14:00</li>
+                        <li class="mb-2">Domingos: Cerrado</li>
+                        <li class="mb-2">Urgencias: 24/7</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="text-uppercase mb-4">Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Av. Principal 123, Ciudad</li>
+                        <li class="mb-2"><i class="fas fa-phone-alt me-2"></i> (123) 456-7890</li>
+                        <li class="mb-2"><i class="fas fa-mobile-alt me-2"></i> (098) 765-4321</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@dentalsmile.com</li>
+                        <li class="mb-2"><i class="fas fa-globe me-2"></i> www.dentalsmile.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4" />
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">© 2023 DentalSmile. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a class="text-white me-3 text-decoration-none" href="#">Política de Privacidad</a>
+                    <a class="text-white text-decoration-none" href="#">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
+    <script src="Servicios.js"></script>
+</body>
+
+</html>
